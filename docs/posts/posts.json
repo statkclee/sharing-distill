@@ -1,0 +1,17 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "블로그에 오신 것을 환영합니다.",
+    "description": "Welcome to our new blog, My Blog. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Tidyverse Korea",
+        "url": "https://www.facebook.com/groups/tidyverse/"
+      }
+    ],
+    "date": "2020-04-22",
+    "categories": [],
+    "preview": "posts/welcome/distill-preview.png",
+    "last_modified": "2020-04-22T20:04:41+09:00"
+  }
+]

@@ -1,0 +1,18 @@
+name: "distill-website"
+title: "Distill 웹사이트"
+description: |
+  데이터 과학 공유를 distill로 추진합니다.
+output_dir: "docs"
+navbar:
+  right:
+    - text: "블로그"
+      href: index.html
+    - text: "콘텐츠"
+      menu:
+      - text: "데이터 과학"
+        href: iris.html
+      - text: "시각화"
+        href: gapminder.html
+      - text: "보고서"
+        href: automation.html        
+output: distill::distill_article

@@ -1,0 +1,31 @@
+---
+title: "블로그에 오신 것을 환영합니다."
+description: |
+  Welcome to our new blog, My Blog. We hope you enjoy 
+  reading what we have to say!
+author:
+  - name: Tidyverse Korea
+    url: https://www.facebook.com/groups/tidyverse/
+    affiliation: Tidyverse Korea
+    affiliation_url: https://www.facebook.com/groups/tidyverse/
+date: "`r Sys.Date()`"
+output:
+  distill::distill_article:
+    self_contained: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE,
+                      comment="", digits = 3, tidy = FALSE, prompt = FALSE, 
+                      fig.align = 'center')
+```
+
+
+# 블로그 시작
+
+```{r blog}
+plot(x=mtcars$wt, y=mtcars$mpg)
+```
+
