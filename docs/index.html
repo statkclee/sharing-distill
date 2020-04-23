@@ -19,29 +19,29 @@
  <!--/radix_placeholder_import_source-->
 
   <!--radix_placeholder_meta_tags-->
-  <title>Distill 웹사이트: 데이터 과학 제품 공유</title>
+  <title>Distill 웹사이트: 데이터 과학 제품 블로그</title>
 
 
 
   <!--  https://schema.org/Article -->
-  <meta property="article:published" itemprop="datePublished" content="2020-04-22"/>
-  <meta property="article:created" itemprop="dateCreated" content="2020-04-22"/>
+  <meta property="article:published" itemprop="datePublished" content="2020-04-23"/>
+  <meta property="article:created" itemprop="dateCreated" content="2020-04-23"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Distill 웹사이트: 데이터 과학 제품 공유"/>
+  <meta property="og:title" content="Distill 웹사이트: 데이터 과학 제품 블로그"/>
   <meta property="og:type" content="article"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Distill 웹사이트"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Distill 웹사이트: 데이터 과학 제품 공유"/>
+  <meta property="twitter:title" content="Distill 웹사이트: 데이터 과학 제품 블로그"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","date","site","listing","editor_options","categories","tags"]}},"value":[{"type":"character","attributes":{},"value":["데이터 과학 제품 공유"]},{"type":"character","attributes":{},"value":["2020-04-22"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["chunk_output_type"]}},"value":[{"type":"character","attributes":{},"value":["console"]}]},{"type":"character","attributes":{},"value":["R"]},{"type":"character","attributes":{},"value":["R Markdown","blogdown","bookdown","공유","netlify"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","date","site","listing","editor_options","categories","tags"]}},"value":[{"type":"character","attributes":{},"value":["데이터 과학 제품 블로그"]},{"type":"character","attributes":{},"value":["2020-04-23"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["chunk_output_type"]}},"value":[{"type":"character","attributes":{},"value":["console"]}]},{"type":"character","attributes":{},"value":["R"]},{"type":"character","attributes":{},"value":["R Markdown","blogdown","bookdown","공유","netlify"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1273,7 +1273,7 @@
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"데이터 과학 제품 공유","authors":[],"publishedDate":"2020-04-22T00:00:00.000+09:00"}
+{"title":"데이터 과학 제품 블로그","authors":[],"publishedDate":"2020-04-23T00:00:00.000+09:00"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1623,7 +1623,7 @@ function init_posts_list() {
 
 <div class="posts-container posts-apply-limit l-page">
 <div class="posts-list">
-<h1 class="posts-list-caption">데이터 과학 제품 공유</h1>
+<h1 class="posts-list-caption">데이터 과학 제품 블로그</h1>
 <a href="posts/welcome/" class="post-preview">
 <script class="post-metadata" type="text/json">{"categories":[]}</script>
 <div class="metadata">
@@ -1646,18 +1646,62 @@ reading what we have to say!</p>
 <!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>데이터 과학 제품 공유</h1>
+<h1>데이터 과학 제품 블로그</h1>
 
 </div>
 
 
 <div class="d-article">
+<h3 class="d-toc-header">Table of Contents</h3>
+<nav class="d-toc" id="TOC">
+<ul>
+<li><a href="#yml-파일의-힘"><code>.yml</code> 파일의 힘</a></li>
+<li><a href="#r-콘텐츠-공유">R 콘텐츠 공유</a></li>
+<li><a href="#github-공유">GitHub 공유</a></li>
+</ul>
+</nav>
+<hr class="d-toc-separator"/>
 <h1 id="yml-파일의-힘"><code>.yml</code> 파일의 힘</h1>
 <ul>
 <li><a href="iris.html"><code>iris</code> 블로그</a></li>
 </ul>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+library(tidyverse)
+
+readr::read_lines(&quot;_site.yml&quot;) %&gt;% 
+  str_remove_all(&#39;\&quot;&#39;)</code></pre>
+<pre><code>
+ [1] &quot;name: distill-website&quot;                     
+ [2] &quot;title: Distill 웹사이트&quot;                   
+ [3] &quot;description: |&quot;                            
+ [4] &quot;  데이터 과학 공유를 distill로 추진합니다.&quot;
+ [5] &quot;output_dir: docs&quot;                          
+ [6] &quot;navbar:&quot;                                   
+ [7] &quot;  right:&quot;                                  
+ [8] &quot;    - text: 블로그&quot;                        
+ [9] &quot;      href: index.html&quot;                    
+[10] &quot;    - text: 콘텐츠&quot;                        
+[11] &quot;      menu:&quot;                               
+[12] &quot;      - text: 데이터 과학&quot;                 
+[13] &quot;        href: iris.html&quot;                   
+[14] &quot;      - text: 시각화&quot;                      
+[15] &quot;        href: gapminder.html&quot;              
+[16] &quot;      - text: 보고서&quot;                      
+[17] &quot;        href: automation.html        &quot;     
+[18] &quot;output: &quot;                                  
+[19] &quot;  distill::distill_article:&quot;               
+[20] &quot;    toc: true&quot;                             </code></pre>
+</div>
 <h1 id="r-콘텐츠-공유">R 콘텐츠 공유</h1>
 <p><img src="fig/sharing-yml.png" /></p>
+<h1 id="github-공유">GitHub 공유</h1>
+<p><a href="https://statkclee.github.io/comp_document/cd-github-hosting.html">데이터 과학을 위한 저작도구: Computational Documents, “GitHub 호스팅”</a>을 참조하여 <a href="https://statkclee.github.io/sharing-distill/">Distill 웹사이트</a>를 제작한다. 원본 파일과 관련 코드는 <a href="https://github.com/statkclee/sharing-distill">Sharing Rmarkdown distill paper</a> GitHub 저장소를 참조한다.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre class="r"><code>
+webshot2::webshot(&quot;https://statkclee.github.io/comp_document/cd-github-hosting.html&quot;, selector = &quot;#deploy-dashboard-gh-pages-sources &gt; div.figure &gt; img&quot;, &quot;fig/github-pages.png&quot;)</code></pre>
+<p><img src="index_files/figure-html5/webshot-github-setting-1.png" width="624" style="display: block; margin: auto;" /></p>
+</div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

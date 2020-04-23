@@ -15,4 +15,6 @@ navbar:
         href: gapminder.html
       - text: "보고서"
         href: automation.html        
-output: distill::distill_article
+output: 
+  distill::distill_article:
+    toc: true
